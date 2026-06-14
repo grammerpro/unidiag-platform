@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🏥 UniDiag Platform
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js_14-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**A modern healthcare laboratory management platform built with Next.js — featuring specialized screens for diagnostics, pathology review, operation theatre, and urine analysis workflows.**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[🐛 Report Bug](https://github.com/grammerpro/unidiag-platform/issues) · [💡 Request Feature](https://github.com/grammerpro/unidiag-platform/issues)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📋 Table of Contents
 
-To learn more about Next.js, take a look at the following resources:
+- [About](#-about)
+- - [Features](#-features)
+  - - [Modules](#-modules)
+    - - [Tech Stack](#-tech-stack)
+      - - [Getting Started](#-getting-started)
+        - - [Project Structure](#-project-structure)
+          - - [Roadmap](#-roadmap)
+            - - [Contributing](#-contributing)
+              - - [License](#-license)
+               
+                - ---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+                ## 🔍 About
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+                UniDiag is a unified diagnostic management platform built for healthcare facilities. It provides purpose-built UI screens for different departments — from the dashboard overview to specialized laboratory workflows — enabling clinical staff to manage test results, reviews, and patient data efficiently.
 
-## Deploy on Vercel
+                ---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+                ## ✨ Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+                - 🖥️ **Multi-module Dashboard** — Unified overview across all lab departments
+                - - 🔬 **Pathologist Review** — Streamlined interface for reviewing and annotating test results
+                  - - 🧪 **Urine Analysis** — Dedicated workflow for urinalysis result entry and reporting
+                    - - 🏥 **Operation Theatre** — Pre/post-op diagnostic tracking screen
+                      - - 📱 **Responsive Design** — Works on tablets and desktops used in clinical environments
+                        - - 🎨 **Component Library** — Reusable UI components following a consistent design system
+                         
+                          - ---
+
+                          ## 🧩 Modules
+
+                          | Module | Route | Description |
+                          |--------|-------|-------------|
+                          | Dashboard | `/dashboard` | Overview of all lab activity and KPIs |
+                          | Pathologist Review | `/pathologist-review` | Review and annotate diagnostic reports |
+                          | Urine Analysis | `/urine-analysis` | Urinalysis result entry and reporting |
+                          | Operation Theatre | `/operation-theatre` | Pre/post-op diagnostic tracking |
+
+                          ---
+
+                          ## 🛠️ Tech Stack
+
+                          | Layer | Technology |
+                          |-------|-----------|
+                          | Framework | Next.js 14 (App Router) |
+                          | Language | TypeScript |
+                          | Styling | Tailwind CSS |
+                          | Components | Custom UI component library (`/components/ui`) |
+
+                          ---
+
+                          ## 🚀 Getting Started
+
+                          ### Prerequisites
+
+                          - **Node.js** v18+
+                          - - **npm** v9+
+                           
+                            - ### Installation
+                           
+                            - ```bash
+                              git clone https://github.com/grammerpro/unidiag-platform.git
+                              cd unidiag-platform
+                              npm install
+                              npm run dev
+                              ```
+
+                              Open [http://localhost:3000](http://localhost:3000) to view the platform.
+
+                              ---
+
+                              ## 📁 Project Structure
+
+                              ```
+                              unidiag-platform/
+                              ├── src/
+                              │   ├── app/
+                              │   │   ├── dashboard/           # Main dashboard screen
+                              │   │   ├── pathologist-review/  # Pathology review module
+                              │   │   ├── urine-analysis/      # Urinalysis module
+                              │   │   ├── operation-theatre/   # Operation theatre module
+                              │   │   ├── layout.tsx
+                              │   │   └── page.tsx
+                              │   └── components/
+                              │       └── ui/                  # Reusable UI component library
+                              ├── public/
+                              ├── tailwind.config.ts
+                              └── package.json
+                              ```
+
+                              ---
+
+                              ## 🗺️ Roadmap
+
+                              - [ ] Patient data management module
+                              - [ ] - [ ] Real-time result updates via WebSocket
+                              - [ ] - [ ] PDF report generation per patient
+                              - [ ] - [ ] Role-based access control (Doctor / Lab Technician / Admin)
+                              - [ ] - [ ] Integration with lab equipment APIs
+                             
+                              - [ ] ---
+                             
+                              - [ ] ## 🤝 Contributing
+                             
+                              - [ ] 1. Fork the repository
+                              - [ ] 2. Create a branch: `git checkout -b feature/your-module`
+                              - [ ] 3. Follow the existing component patterns in `/components/ui`
+                              - [ ] 4. Open a Pull Request
+                             
+                              - [ ] ---
+                             
+                              - [ ] ## 📄 License & Contact
+                             
+                              - [ ] Released under the **MIT License**.
+                             
+                              - [ ] **Vardhan** · [vardhana1209@gmail.com](mailto:vardhana1209@gmail.com) · [github.com/grammerpro](https://github.com/grammerpro)
